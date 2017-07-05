@@ -1,0 +1,41 @@
+.wrap
+    max-width: 1024px
+    @extend %div-m0-a
+.header
+    @extend %div-m0-a
+    height: 380px
+    background: url('../img/the-urban-landscape-1698285.png') no-repeat
+    background-size: cover
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    flex-direction: column
+    h1
+        font-size: 40px
+        color: $img-color
+        font-family: $header-fm
+        letter-spacing: 3.89px
+        padding-top: 89px
+    #areaId
+        width: 452px
+        height: 48px
+        margin-top: 96px
+        padding-left: 9.5px
+        background: rgba(255,255,255,0.70)
+        border: 3px solid #FFFFFF
+        border-radius: 3px
+        font-size: 18px
+        line-height: 21px
+        option
+            font-family: $header-fm
+            color: $p-color
+
+//gotop按鈕樣式
+#gotop
+    display: none
+    position: fixed
+    right: 20px
+    bottom: 20px    
+    padding: 10px 15px    
+    font-size: 20px
+    cursor: pointer

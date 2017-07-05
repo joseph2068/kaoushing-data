@@ -1,0 +1,53 @@
+//all color
+$title-color: #8A82CC 
+$tab-color: #FFFFFF
+$p-color: #000000
+$img-color: #FFFFFF
+//all font-family
+$tab-title-fm: SFNSDisplay
+$header-fm: PingFangTC-Regular
+$p-fm: AppleSystemUIFont
+//font-size
+$p-size: 16px
+$img-size: 24px
+$footer-size: 14px
+
+@mixin btn($btn-w,$btn-h,$btn-color)
+    background: $btn-color
+    border-radius: 5px
+    width: $btn-w
+    height: $btn-h
+    font-family: $tab-title-fm
+    font-size: 20px
+    color: $tab-color
+
+@mixin card($card-w,$card-h)
+    width: $card-w
+    height: $card-h
+    vertical-align: text-top
+    background: #FFFFFF
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20) 
+    img 
+        width: 100%
+        height: 155px
+    h3
+        font-family: $tab-title-fm
+        font-size: $img-size
+        color: $img-color
+        padding-left: 5px
+        margin-top: -30px
+        margin-bottom: 20px
+    p
+        line-height: 1.5
+        font-family: $p-fm
+        font-size: $p-size
+        color: $p-color
+        padding: 0 19px 0 23px
+    i
+        font-size: $p-size 
+        margin-right: 5px
+    
+
+%div-m0-a
+    margin: 0 auto
+

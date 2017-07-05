@@ -1,0 +1,126 @@
+
+@mixin card($card-w,$card-h)
+    width: $card-w
+    height: $card-h
+    vertical-align: text-top
+    background: #FFFFFF
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20) 
+    img 
+        width: 100%
+        height: 155px
+    h3
+        font-family: $tab-title-fm
+        font-size: $img-size
+        color: $img-color
+        padding-left: 5px
+        margin-top: -30px
+        margin-bottom: 20px
+    p
+        line-height: 1.5
+        font-family: $p-fm
+        font-size: $p-size
+        color: $p-color
+        padding: 0 19px 0 23px
+    i
+        font-size: $p-size 
+        margin-right: 5px
+
+%div-m0-a
+    margin: 0 auto
+
+.content
+  @extend %div-m0-a
+.menu
+  margin: -25px auto 0 auto
+  max-width: 800px
+  background: #FFFFFF
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20)
+  border-radius: 5px
+  h3
+    font-size: 18px
+    color: $p-color
+    padding: 20px 0 0 26px 
+.tab
+  display: flex
+  justify-content: space-around
+  align-items: center
+  padding: 42px 146px 25px 51px
+  .button
+    +btn(130px,42px,#8A82CC)
+    &:nth-child(2)
+      background: #FFA782
+    &:nth-child(3)
+      background: #F5D105 
+    &:nth-child(4)
+      background: #559AC8
+    cursor: pointer
+.line
+  @extend %div-m0-a
+  width: 900px
+  max-height: 0px
+  border: 1px dashed #559AC8
+  margin-top: 49px
+  text-align: center
+  position: relative
+  a
+    width: 30px
+    height: 30px
+    position: absolute
+    border: 1px solid #559AC8 
+    border-radius: 50% 50%
+    top: -13px
+    left: calc(50% - 15px)
+    background: #FFF
+    i
+      margin-top: -8px
+      color: #559AC8
+.areaText
+  text-align: center
+  margin-top: 65px 
+  font-family: $tab-title-fm
+  font-size: 36px
+  color: #8A82CC
+.showintro 
+  margin: 20px 40px 0 40px
+  .card
+    display: inline-block
+    margin-bottom: 36px
+    +card(464px,273px)
+    &:nth-child(2n+1)
+      margin-right: 8px
+    &:nth-child(2n+2)
+      margin-left: 8px
+    p
+      &:last-child
+        padding-bottom: 22px
+      >i+i
+        margin-left: 187px
+      >i
+        &:last-child
+          color: #F5D105
+          font-size: 18px
+    p
+      &:nth-child(3) 
+      i
+        color: #8A82CC
+        font-size: 18px
+      &:nth-child(4) 
+      i
+        color: #FFA782
+        font-size: 18px     
+      &:nth-child(5) 
+        i
+          color: #559AC8
+          font-size: 18px
+      &:last-child
+        padding-bottom: 22px
+      >i+i
+        margin-left: 187px
+    //google map樣式
+#map
+  width: calc(100% - 40px*2)
+  margin-top: 8px
+  margin-bottom: 44px
+  @extend %div-m0-a
+  height: 300px
+  background-color: grey

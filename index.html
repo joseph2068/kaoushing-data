@@ -6,23 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/9bb675c52f.js"></script>
 </head>
 
 <body>
-    <select id="areaId">
-        <option>請選擇行政區域</option>
-    </select>
-    <div class="menu">
-        <input type="button" value="三民區">
-        <input type="button" value="甲仙區">
-        <input type="button" value="岡山區">
-        <input type="button" value="美濃區">
-
+    <div id="gotop"><img src="img/btn_goTop.png" alt=""></div>
+    <div class="wrap">
+        <div class="header">
+            <h1>高雄旅遊資訊</h1>
+            <select id="areaId">
+                </select>
+        </div>
+        <div class="content">
+            <div class="menu">
+                <h3>熱門行政區</h3>
+                <div class="tab">
+                    <input type="button" value="三民區" class="button">
+                    <input type="button" value="甲仙區" class="button">
+                    <input type="button" value="岡山區" class="button">
+                    <input type="button" value="美濃區" class="button"></div>
+            </div>
+            <div class="line"><a href="#"><i class="fa fa-sort-desc fa-2x" aria-hidden="true"></i></a></div>
+            <h2 class="areaText"></h2>
+            <div class="showintro"></div>
+            <div id="map"></div>
+        </div>
     </div>
-    <h2 class="areaText"></h2>
-    <div class="container"></div>
+    <div class="footer">
+        <p>高雄旅遊網</p>
+        <p>資料來源：高雄市政府 </p>
+    </div>
 
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDewHIw1ZIND-5XKm5CLoIqgFIVMpGse2s&callback=initMap">
+    </script>
     <script src="js/all.js">
     </script>
 </body>
