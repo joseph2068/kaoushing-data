@@ -1,6 +1,12 @@
 .wrap
     max-width: 1024px
     @extend %div-m0-a
++pad()
+    .wrap
+        width: 100%
+    .header
+        width: 100%
+        display: block
 .header
     @extend %div-m0-a
     height: 380px
@@ -17,7 +23,7 @@
         letter-spacing: 3.89px
         padding-top: 89px
     #areaId
-        width: 452px
+        max-width: 452px
         height: 48px
         margin-top: 96px
         padding-left: 9.5px
@@ -39,3 +45,7 @@
     padding: 10px 15px    
     font-size: 20px
     cursor: pointer
+    +pad()
+        right: 10px
+       
+        

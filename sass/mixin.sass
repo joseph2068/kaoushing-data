@@ -12,6 +12,7 @@ $p-size: 16px
 $img-size: 24px
 $footer-size: 14px
 
+//btn moudle
 @mixin btn($btn-w,$btn-h,$btn-color)
     background: $btn-color
     border-radius: 5px
@@ -20,7 +21,7 @@ $footer-size: 14px
     font-family: $tab-title-fm
     font-size: 20px
     color: $tab-color
-
+//card moudle
 @mixin card($card-w,$card-h)
     width: $card-w
     height: $card-h
@@ -47,7 +48,18 @@ $footer-size: 14px
         font-size: $p-size 
         margin-right: 5px
     
-
+//div align-center
 %div-m0-a
     margin: 0 auto
 
+//media query
+$pad: 768px
+
+@mixin pad()
+    @media (max-width: $pad)
+        @content
+
+//text-align-center
+
+%text-c
+    text-align: center
