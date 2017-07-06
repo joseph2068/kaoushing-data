@@ -90,7 +90,7 @@ img {
     letter-spacing: 3.89px;
     padding-top: 89px; }
   .header #areaId {
-    max-width: 452px;
+    width: 452px;
     height: 48px;
     margin-top: 96px;
     padding-left: 9.5px;
@@ -102,6 +102,9 @@ img {
     .header #areaId option {
       font-family: PingFangTC-Regular;
       color: #000000; }
+    @media (max-width: 768px) {
+      .header #areaId {
+        max-width: 90%; } }
 
 #gotop {
   display: none;
