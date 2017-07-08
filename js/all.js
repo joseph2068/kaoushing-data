@@ -8,7 +8,7 @@ var showdata = document.querySelector('.showintro');
 
 function getData() {
     var xhr = new XMLHttpRequest();
-    xhr.open('get', 'http://data.kcg.gov.tw/api/action/datastore_search?resource_id=92290ee5-6e61-456f-80c0-249eae2fcc97', true);
+    xhr.open('get', 'https://joseph2068.github.io/kaoushing-data/js/data.json', true);
     xhr.send(null);
     xhr.onload = function () {
         data = (JSON.parse(xhr.responseText));
