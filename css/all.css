@@ -47,7 +47,7 @@ table {
 .wrap, .header, .content, .line, #map {
   margin: 0 auto; }
 
-.line, .areaText, .showintro, .footer {
+.line, .areaText, .footer {
   text-align: center; }
 
 * {
